@@ -52,7 +52,7 @@
               <span class="font-bold text-lg text-slate-900 tracking-tight">EduPulse <span class="text-blue-600">AI</span></span>
               <span class="text-[10px] font-semibold bg-blue-50 text-blue-700 border border-blue-200 px-2 py-0.5 rounded-full uppercase tracking-wider">KPMG Challenge 04</span>
             </div>
-            <p class="text-xs text-slate-500">Student Analytics & Proactive Success Platform</p>
+            <p class="text-xs text-slate-500">St. Mary's Group of Institutions · CSE Cohort</p>
           </div>
         </div>
 
@@ -93,7 +93,7 @@
       <div class="flex items-center justify-between mb-4">
         <div>
           <h1 class="text-2xl font-bold text-slate-900 tracking-tight">Institutional Success Dashboard</h1>
-          <p class="text-sm text-slate-500">Real-time cohort monitoring, early risk signals & prescriptive AI interventions</p>
+          <p class="text-sm text-slate-500">St. Mary's Group of Institutions · B.Tech CSE (Sections A, B & C)</p>
         </div>
         <div class="text-xs text-slate-400 flex items-center space-x-1">
           <i data-lucide="clock" class="w-3.5 h-3.5"></i>
@@ -167,7 +167,7 @@
             <div id="kpi-gpa" class="text-3xl font-extrabold text-slate-900 tracking-tight">--</div>
             <div class="mt-1 flex items-center text-xs text-slate-500">
               <span class="text-emerald-600 font-semibold mr-1">10.0 Scale</span>
-              <span>Across all 5 Engineering Depts</span>
+              <span>Across 198 CSE Students</span>
             </div>
           </div>
         </div>
@@ -177,14 +177,14 @@
     <!-- Macro Analytics & Bottlenecks Section -->
     <section class="grid grid-cols-1 lg:grid-cols-3 gap-6">
       
-      <!-- Department Risk Distribution Chart -->
+      <!-- Section Risk Distribution Chart -->
       <div class="bg-white rounded-xl p-5 border border-slate-200 shadow-sm lg:col-span-2">
         <div class="flex items-center justify-between mb-4">
           <div>
-            <h2 class="text-base font-bold text-slate-900">Department Risk & Retention Distribution</h2>
-            <p class="text-xs text-slate-500">Comparative risk tiers across engineering departments</p>
+            <h2 class="text-base font-bold text-slate-900">CSE Sections Risk & Retention Distribution</h2>
+            <p class="text-xs text-slate-500">Comparative risk tiers across CSE Sections A, B & C</p>
           </div>
-          <span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md font-medium">Cohorts 2023-2026</span>
+          <span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md font-medium">B.Tech Batch 2025</span>
         </div>
         <div class="h-64">
           <canvas id="deptChart"></canvas>
@@ -259,14 +259,12 @@
 
           <div class="h-4 w-px bg-slate-200 mx-2 hidden sm:block"></div>
 
-          <!-- Department dropdown -->
+          <!-- Section filter dropdown -->
           <select id="deptFilter" onchange="applyFilters()" class="text-xs bg-slate-50 border border-slate-200 rounded-lg px-2.5 py-1 text-slate-700 focus:outline-none">
-            <option value="All">All Departments</option>
-            <option value="Computer Science & Engineering">Computer Science</option>
-            <option value="Artificial Intelligence & Data Science">AI & Data Science</option>
-            <option value="Information Technology">Information Tech</option>
-            <option value="Electronics & Communication Engineering">ECE</option>
-            <option value="Mechanical Engineering">Mechanical</option>
+            <option value="All">All Sections</option>
+            <option value="CSE - Section A">CSE - Section A</option>
+            <option value="CSE - Section B">CSE - Section B</option>
+            <option value="CSE - Section C">CSE - Section C</option>
           </select>
 
           <!-- Attendance toggle checkbox -->

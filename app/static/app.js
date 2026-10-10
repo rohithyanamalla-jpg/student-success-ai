@@ -44,12 +44,7 @@ function renderDeptChart(deptData) {
   }
 
   const labels = deptData.map(d => {
-    // Abbreviate department name for cleaner label
-    if (d.department.includes("Computer Science")) return "CSE";
-    if (d.department.includes("Artificial Intelligence")) return "AI & DS";
-    if (d.department.includes("Information")) return "IT";
-    if (d.department.includes("Electronics")) return "ECE";
-    return "Mech";
+    return d.department.replace("CSE - ", "");
   });
 
   const highData = deptData.map(d => d.high_risk_count);
